@@ -1,0 +1,29 @@
+/* ---DARK MODE--- */
+[data-theme='dark'] {
+  --bg-main: #0d1b2a;
+  --bg-cards: #152435;
+  --text-main: #f8fafc;
+  --text-subtle: #94a3b8;
+  --accent-orange: #d35400;
+  --border-color: rgba(248, 250, 252, 0.1);
+  --glass-bg: rgba(13, 27, 42, 0.6);
+
+  --grad-star-orange: linear-gradient(
+    180deg,
+    #a04000 0%,
+    #d35400 50%,
+    #bf360c 100%
+  );
+  --grad-star-blue: linear-gradient(
+    180deg,
+    #5e81ac 0%,
+    #81a1c1 50%,
+    #4c566a 100%
+  );
+
+  h1,
+  h2,
+  h3 {
+    color: var(--text-main);
+  }
+}

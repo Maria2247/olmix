@@ -1,0 +1,22 @@
+{
+  "name": "olmix",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "author": "Mariia Savchenko <mashasavchenko@yahoo.com>",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "globals": "^17.6.0",
+    "modern-normalize": "^3.0.1"
+  }
+}
