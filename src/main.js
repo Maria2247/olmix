@@ -1,4 +1,3 @@
-import 'modern-normalize/modern-normalize.css';
 import './css/style.css';
 
 const openMenuBtn = document.querySelector('.menu-btn');
