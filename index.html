@@ -5,13 +5,27 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-  name="description"
-  content="Kompleksowe wsparcie biznesu i doradztwo strategiczne."
-/>
+      name="description"
+      content="Kompleksowe wsparcie biznesu i doradztwo strategiczne."
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
     <link rel="manifest" href="./site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,20 +36,34 @@
     />
 
     <title>Olmix sp. z o.o.</title>
-     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </head>
+
   <body>
     <header class="header-container">
       <a href="#" class="nav-logo-link">
-        <img src="src/assets/logo-light.svg" alt="Company-logo" class="">
+        <img src="src/assets/logo-light.svg" alt="Company-logo" class="" />
       </a>
       <button type="button" class="menu-btn">menu</button>
       <nav class="main-nav">
         <div class="backdrop-filter"></div>
-        <button type="button" class="close-btn"><svg class="close-btn-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></button>
+        <button type="button" class="close-btn">
+          <svg
+            class="close-btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+            ></path>
+          </svg>
+        </button>
         <ul class="nav-list">
           <li class="nav-item"><a href="#about">o nas</a></li>
           <li class="nav-item"><a href="#offer">oferta</a></li>
+          <li class="nav-item"><a href="#why-us">dlaczego my</a></li>
           <li class="nav-item"><a href="#contacts">kontakt</a></li>
         </ul>
       </nav>
@@ -46,33 +74,110 @@
       </div>
     </header>
     <main>
-      
       <section id="hero" class="hero">
         <div class="hero-bg" aria-hidden="true"></div>
         <div class="container">
-          <span class="hero-eyebrow">kompleksove wsparcie biznesu</span>
+          <span class="hero-eyebrow">olmix Sp. z o.o.</span>
+
           <h1 class="hero-header">
-            Doradztwo strategiczne.<br />Realizacja procesów.
+            Wsparcie biznesu, doradztwo i skuteczna realizacja procesów
+            handlowych
           </h1>
+
           <p class="hero-text">
-            <strong>Olmix Sp. z o.o.</strong> wspiera firmy w budowaniu relacji i realizacji kluczowych procesów biznesowych.
+            Wspieramy firmy w rozwoju działalności, budowaniu relacji
+            biznesowych oraz skutecznej realizacji projektów i transakcji.
           </p>
-          <p>
-            <div class="hero-btn-holder">
-              <button type="button" class="cta-btn">Napisz do nas</button>
-              <button type="button" class="learn-more-btn">O firmie <span>→</span></button>
-            </div>
-            <ul class="hero-features">
-              <li><span class="hero-icon">💜</span>Strategia i doradztwo biznesowe</li>
-              <li><span class="hero-icon">💜</span>Realizacja procesów operacyjnych</li>
-              <li><span class="hero-icon">💜</span>Wsparcie transakcji i negocjacji</li>
-            </ul>
+          <div class="hero-btn-holder">
+            <a href="#cta" type="button" class="cta-btn">Napisz do nas</a>
+            <a href="#about" type="button" class="learn-more-btn">
+              O nas <span>→</span>
+            </a>
+          </div>
+          <!-- <ul class="hero-features">
+              <li><span class="hero-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M221.87,83.16A104.1,104.1,0,1,1,195.67,49l22.67-22.68a8,8,0,0,1,11.32,11.32l-96,96a8,8,0,0,1-11.32-11.32l27.72-27.72a40,40,0,1,0,17.87,31.09,8,8,0,1,1,16-.9,56,56,0,1,1-22.38-41.65L184.3,60.39a87.88,87.88,0,1,0,23.13,29.67,8,8,0,0,1,14.44-6.9Z"></path></svg></span>Strategia i doradztwo biznesowe</li>
+              <li><span class="hero-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V156.69l50.34-50.35a8,8,0,0,1,11.32,0L128,132.69,180.69,80H160a8,8,0,0,1,0-16h40a8,8,0,0,1,8,8v40a8,8,0,0,1-16,0V91.31l-58.34,58.35a8,8,0,0,1-11.32,0L96,123.31l-56,56V200H224A8,8,0,0,1,232,208Z"></path></svg></span>Realizacja procesów operacyjnych</li>
+              <li><span class="hero-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M120,176h-8v-4a28,28,0,0,0-56,0v4H48a8,8,0,0,0-8,8v40a8,8,0,0,0,8,8h72a8,8,0,0,0,8-8V184A8,8,0,0,0,120,176Zm-48-4a12,12,0,0,1,24,0v4H72Zm40,44H56V192h56ZM213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40v88a8,8,0,0,0,16,0V40h88V88a8,8,0,0,0,8,8h48V216H160a8,8,0,0,0,0,16h40a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160Z"></path></svg></span>Wsparcie transakcji i negocjacji</li>
+            </ul> -->
+        </div>
+      </section>
+      <section id="about">
+        <div class="about-bg"></div>
+        <div class="container">
+          <h2 class="section-header">o nas</h2>
+          <p class="about-text">
+            <strong> Olmix Sp. z o.o.</strong> to partner biznesowy oferujący
+            wsparcie doradcze, organizacyjne i operacyjne dla przedsiębiorstw
+            działających w różnych sektorach gospodarki.
+          </p>
+          <p class="about-text">
+            Działamy z myślą o długofalowych relacjach, stawiając na
+            profesjonalizm oraz przejrzystą komunikację.
           </p>
         </div>
       </section>
-      <section></section>
+      <section id="offer">
+        <div class="container">
+          <h2 class="section-header">zakres wsparcia</h2>
+          <div class="offer-card-holder">
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i data-lucide="trending-up"></i>
+              </div>
+              <h3 class="card-header">Doradztwo biznesowe</h3>
+              <p class="offer-text">
+                Analiza potrzeb, planowanie działań oraz wybór rozwiązań
+                dopasowanych do celów biznesowych i specyfiki projektu.
+              </p>
+            </div>
+
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i data-lucide="file-check"></i>
+              </div>
+              <h3 class="card-header">Koordynacja współpracy</h3>
+              <p class="offer-text">
+                Pomoc w organizacji komunikacji i działań pomiędzy stronami
+                procesu na każdym etapie.
+              </p>
+            </div>
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i data-lucide="handshake"></i>
+              </div>
+              <h3 class="card-header">Wsparcie procesów handlowych</h3>
+              <p class="offer-text">
+                Rozwijanie relacji biznesowych oraz prowadzenie procesów i
+                działań wspierających współpracę.
+              </p>
+            </div>
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i data-lucide="refresh-cw"></i>
+              </div>
+              <h3 class="card-header">Obsługa projektów i transakcji</h3>
+              <p class="offer-text">
+                Wsparcie organizacyjne i operacyjne w realizacji wybranych
+                projektów oraz działań transakcyjnych.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why-us">
+        <div class="container">
+          <h2 class="section-header">dlaczego my</h2>
+
+          <!-- 
+          Indywidualne podejście: Każdy projekt traktujemy indywidualnie, dopasowując zakres wsparcia do charakteru współpracy.
+          Sprawna koordynacja: Dobra organizacja działań oraz efektywny przepływ informacji. 
+          Praktyczne rozwiązania: Koncentracja na rozwiązaniach, które wspierają realne cele biznesowe.
+          Długofalowa współpraca: Rzetelność, elastyczność i partnerskie relacje oparte na zaufaniu.  
+          
+          -->
+        </div>
+      </section>
     </main>
     <footer></footer>
-   
   </body>
 </html>

@@ -17,6 +17,7 @@
   "dependencies": {
     "@eslint/js": "^10.0.1",
     "globals": "^17.6.0",
+    "lucide": "^1.16.0",
     "modern-normalize": "^3.0.1"
   }
 }

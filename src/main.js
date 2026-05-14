@@ -1,6 +1,19 @@
-import 'modern-normalize';
 import './css/style.css';
+import {
+  createIcons,
+  Handshake,
+  TrendingUp,
+  FileCheck,
+  RefreshCw,
+} from 'lucide';
 
+// LUCIDE
+
+createIcons({
+  icons: { Handshake, TrendingUp, FileCheck, RefreshCw },
+});
+
+// NAV-MENU
 const openMenuBtn = document.querySelector('.menu-btn');
 const mobileMenu = document.querySelector('.main-nav');
 const closeMenuBtn = document.querySelector('.close-btn');
