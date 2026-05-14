@@ -1,5 +1,21 @@
 import 'modern-normalize';
 import './css/style.css';
+
+const openMenuBtn = document.querySelector('.menu-btn');
+const mobileMenu = document.querySelector('.main-nav');
+const closeMenuBtn = document.querySelector('.close-btn');
+
+openMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('is-open');
+
+  const expanded = burgerBtn.getAttribute('aria-expanded') === 'true';
+
+  burgerBtn.setAttribute('aria-expanded', !expanded);
+});
+
+closeMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('is-open');
+});
 // import javascriptLogo from './assets/javascript.svg';
 // import viteLogo from './assets/vite.svg';
 // import heroImg from './assets/hero.png';

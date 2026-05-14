@@ -5,10 +5,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,12 +18,28 @@
     />
 
     <title>Olmix sp. z o.o.</title>
+     <script type="module" src="./src/main.js"></script>
   </head>
   <body>
     <header class="header-container">
       <a href="#" class="nav-logo-link">
         <img src="src/assets/logo-light.svg" alt="Company-logo" class="">
       </a>
+      <button type="button" class="menu-btn">menu</button>
+      <nav class="main-nav">
+        <div class="backdrop-filter"></div>
+        <button type="button" class="close-btn"><svg class="close-btn-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about">o nas</a></li>
+          <li class="nav-item"><a href="#offer">oferta</a></li>
+          <li class="nav-item"><a href="#contacts">kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header-utilities">
+        <span>PL</span>|
+        <span>EN</span>
+        <span>🌗</span>
+      </div>
     </header>
     <main>
       
@@ -43,9 +59,9 @@
               <button type="button" class="learn-more-btn">O firmie <span>→</span></button>
             </div>
             <ul class="hero-features">
-              <li><span class="icon">💜</span>Strategia i doradztwo biznesowe</li>
-              <li><span class="icon">💜</span>Realizacja procesów operacyjnych</li>
-              <li><span class="icon">💜</span>Wsparcie transakcji i negocjacji</li>
+              <li><span class="hero-icon">💜</span>Strategia i doradztwo biznesowe</li>
+              <li><span class="hero-icon">💜</span>Realizacja procesów operacyjnych</li>
+              <li><span class="hero-icon">💜</span>Wsparcie transakcji i negocjacji</li>
             </ul>
           </p>
         </div>
@@ -53,6 +69,6 @@
       <section></section>
     </main>
     <footer></footer>
-    <script type="module" src="src/main.js"></script>
+   
   </body>
 </html>
