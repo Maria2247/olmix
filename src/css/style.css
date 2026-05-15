@@ -448,20 +448,28 @@ section.hero {
   background-repeat: no-repeat;
   background-position: center left;
   opacity: 0.5;
-  /* transform: scale(1.5); */
 }
 
 .contacts-holder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   padding: 4rem 2rem;
-
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .contacts-text {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.8;
+  text-wrap: balance;
+}
+
+.contacts-cta {
   font-size: 1.25rem;
   line-height: 1.8;
   text-align: center;
@@ -476,4 +484,57 @@ section.hero {
   width: 10rem;
   font-size: 1rem;
   padding: 1rem 1rem;
+}
+
+/* ---FOOTER--- */
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 5rem 1.2rem 2.5rem;
+  font-family: var(--font-heading);
+}
+
+.company-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.footer-logo-link {
+  max-width: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.company-info-item {
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.company-info-item span {
+  color: var(--accent-orange);
+  font-weight: 500;
+}
+.legal {
+  font-weight: 500;
+}
+.copyright p {
+  font-size: 0.85rem;
+  border-top: 1px solid #eee;
+  opacity: 0.7;
+  text-align: center;
+  padding-top: 2rem;
 }
