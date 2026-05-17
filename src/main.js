@@ -1,4 +1,4 @@
-import './css/style.css';
+import '/src/css/style.css';
 import {
   createIcons,
   Handshake,
@@ -48,6 +48,10 @@ const savedTheme =
     : 'light');
 
 document.documentElement.setAttribute('data-theme', savedTheme);
+
+if (savedTheme === 'dark' && themeToggleBtn) {
+  themeToggleBtn.classList.add('active');
+}
 
 if (themeToggleBtn) {
   themeToggleBtn.addEventListener('click', () => {
