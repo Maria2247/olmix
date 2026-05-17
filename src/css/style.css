@@ -1,8 +1,8 @@
 @import 'modern-normalize';
-@import url(./base.css);
-@import url(./container.css);
-@import url(./components.css);
-@import url(./dark-mode.css);
+@import url(../css/base.css);
+@import url(../css/container.css);
+@import url(../css/components.css);
+@import url(../css/dark-mode.css);
 
 /* ---HEADER--- */
 .header-container {
