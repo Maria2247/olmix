@@ -37,16 +37,30 @@ navLink.forEach(link => {
 
 closeMenuBtn.addEventListener('click', closeMobileNav);
 
-// FIXED HEADER
+// DARK MODE
 
-// const header = document.querySelector('.header-container');
+const themeToggleBtn = document.querySelector('#theme-toggle');
 
-// const stickyPoint = header.offsetTop;
+const savedTheme =
+  localStorage.getItem('theme') ||
+  (window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light');
 
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > stickyPoint) {
-//     header.classList.add('is-fixed');
-//   } else {
-//     header.classList.remove('is-fixed');
-//   }
-// });
+document.documentElement.setAttribute('data-theme', savedTheme);
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+
+    if (newTheme === 'dark') {
+      themeToggleBtn.classList.add('active');
+    } else {
+      themeToggleBtn.classList.remove('active');
+    }
+  });
+}

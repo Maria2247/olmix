@@ -42,7 +42,16 @@
   <body>
     <header class="header-container">
       <a href="#" class="nav-logo-link">
-        <img src="src/assets/logo-light.svg" alt="Company-logo" class="" />
+        <picture>
+          <img
+            srcset="/src/assets/logo-dark.svg"
+            alt="Company-logo"
+            class="logo-dark" />
+          <img
+            src="src/assets/logo-light.svg"
+            alt="Company-logo"
+            class="logo-light"
+        /></picture>
       </a>
       <button type="button" class="menu-btn">menu</button>
       <nav class="main-nav">
@@ -70,11 +79,17 @@
           <li class="nav-item"><a href="#company-info">dane spółki</a></li>
         </ul>
       </nav>
-      <div class="header-utilities">
+      <div class="lang-toggle-holder">
         <span>PL</span>|
         <span>EN</span>
-        <span>🌗</span>
       </div>
+      <button
+        id="theme-toggle"
+        class="theme-toggle-btn"
+        aria-label="Zmień motyw"
+      >
+        <span class="switch-ball"></span>
+      </button>
     </header>
     <main>
       <section id="hero" class="hero">
@@ -215,7 +230,14 @@
     <footer id="company-info">
       <div class="container">
         <a href="#" class="footer-logo-link">
-          <img src="src/assets/logo-light.svg" alt="Company-logo"
+          <img
+            srcset="/src/assets/logo-dark.svg"
+            alt="Company-logo"
+            class="logo-dark" />
+          <img
+            src="src/assets/logo-light.svg"
+            alt="Company-logo"
+            class="logo-light"
         /></a>
         <ul class="company-info-list">
           <li class="company-info-item">

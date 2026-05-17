@@ -32,6 +32,14 @@
 
 body {
   line-height: 1.5;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -60,16 +68,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-body {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  color: var(--text-main);
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {

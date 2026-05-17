@@ -20,10 +20,20 @@
     #81a1c1 50%,
     #4c566a 100%
   );
+}
 
-  h1,
-  h2,
-  h3 {
-    color: var(--text-main);
-  }
+[data-theme='dark'] .logo-light {
+  display: none;
+}
+
+[data-theme='dark'] .logo-dark {
+  display: block;
+}
+
+[data-theme='dark'] .hero-bg {
+  background-image: url('../assets/hero-bg-dark.svg');
+}
+
+[data-theme='dark'] .about-bg {
+  background-image: url('../assets/about-bg-dark.svg');
 }

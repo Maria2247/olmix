@@ -2,17 +2,21 @@
 @import url(./base.css);
 @import url(./container.css);
 @import url(./components.css);
+@import url(./dark-mode.css);
 
 /* ---HEADER--- */
-
 .header-container {
   position: relative;
-  padding: 0.5rem 0.5em;
+  padding: 0.5rem 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 1px var(--bg-cards);
+  border-bottom: solid 1px var(--border-color);
   z-index: 100;
+}
+
+.logo-dark {
+  display: none;
 }
 
 .nav-logo-link {
@@ -20,6 +24,7 @@
 }
 
 .menu-btn {
+  flex-grow: 1;
   font-weight: 300;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -166,15 +171,68 @@
   transition: all 0.1s ease;
 }
 
-.header-utilities {
-  padding-top: 1.5rem;
+.nav-item .cta-btn:hover,
+.nav-item .cta-btn:focus {
+  color: var(--text-main);
+  font-weight: 400;
 }
-.header-utilities span {
+
+.nav-item .cta-btn:active {
+  color: var(--bg-main);
+}
+
+.lang-toggle-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+  margin-right: 0.825rem;
+}
+
+.lang-toggle-holder span {
   font-weight: 300;
   font-size: 0.85rem;
   letter-spacing: 0.2rem;
   background-color: transparent;
-  padding-top: 1.5rem;
+}
+
+.theme-toggle-btn {
+  display: block;
+  width: 3rem;
+  height: 1.5rem;
+  background-color: var(--border-color);
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  padding-top: 0;
+  margin-top: 1.5rem;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.theme-toggle-btn .switch-ball {
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: var(--accent-orange);
+  border-radius: 50%;
+  position: absolute;
+  top: 0.6px;
+  left: 0.6px;
+  transition: transform 0.4s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.theme-toggle-btn.active {
+  background-color: var(--accent-orange);
+}
+
+.theme-toggle-btn.active .switch-ball {
+  transform: translateX(24px);
+  background-color: var(--accent-orange);
+  box-shadow: inset -6px -3px 0 0 #fff;
 }
 
 /* --HERO--- */
@@ -233,7 +291,8 @@ section.hero {
 
 .learn-more-btn {
   font-weight: 500;
-  padding: 0.5rem 2.1rem;
+  padding: 0.5rem 1rem;
+  width: 9rem;
   background-color: var(--border-color);
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
@@ -448,6 +507,7 @@ section.hero {
   background-repeat: no-repeat;
   background-position: center left;
   opacity: 0.5;
+  z-index: -1;
 }
 
 .contacts-holder {
@@ -484,6 +544,7 @@ section.hero {
   width: 10rem;
   font-size: 1rem;
   padding: 1rem 1rem;
+  cursor: pointer;
 }
 
 /* ---FOOTER--- */
