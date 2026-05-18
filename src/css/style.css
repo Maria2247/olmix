@@ -787,6 +787,10 @@ footer .container {
 
   /* ---CONTACTS--- */
 
+  .contacts-bg {
+    left: 10rem;
+  }
+
   .contacts-text {
     font-size: 1.2rem;
   }
@@ -993,6 +997,10 @@ footer .container {
   }
 
   /* ---CONTACTS--- */
+
+  .contacts-bg {
+    left: 18.75rem;
+  }
 
   .contacts-text {
     font-size: 1.5rem;
