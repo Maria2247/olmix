@@ -597,9 +597,9 @@ footer .container {
   font-family: var(--font-heading);
 }
 
-.company-name {
+.company-mail {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
@@ -788,7 +788,7 @@ footer .container {
   /* ---CONTACTS--- */
 
   .contacts-bg {
-    left: 10rem;
+    left: 2rem;
   }
 
   .contacts-text {
@@ -817,8 +817,8 @@ footer .container {
     gap: 3rem;
   }
 
-  .company-name {
-    font-size: 1.5rem;
+  .company-mail {
+    font-size: 1rem;
   }
 
   .footer-logo-link {
@@ -999,7 +999,7 @@ footer .container {
   /* ---CONTACTS--- */
 
   .contacts-bg {
-    left: 18.75rem;
+    left: 5rem;
   }
 
   .contacts-text {
@@ -1024,8 +1024,8 @@ footer .container {
     padding-top: 1.2rem;
   }
 
-  .company-name {
-    font-size: 2rem;
+  .company-mail {
+    font-size: 1.5rem;
   }
 
   .footer-logo-link {
