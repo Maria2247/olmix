@@ -287,9 +287,8 @@ section.hero {
   background-image: url('../assets/hero-bg.svg');
   background-repeat: no-repeat;
   inset: 0;
-  top: 0;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.7;
   background-size: 80% auto;
   background-position: bottom right;
 }
@@ -358,38 +357,6 @@ section.hero {
   transform: translateY(0);
 }
 
-.hero-features {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.75rem;
-}
-
-.hero-features li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.hero-features span {
-  font-size: 1rem;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-cards);
-  padding: 0.25rem;
-  border-radius: 4px;
-}
-
-.hero-icon {
-  width: 1rem;
-  height: 1rem;
-  fill: var(--text-subtle);
-}
-
 /* ---ABOUT--- */
 
 .about-bg {
@@ -424,13 +391,16 @@ section.hero {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  justify-content: center;
 }
 
 .offer-card {
   background-color: var(--bg-cards);
   border: 1px solid var(--border-color);
   padding: 1rem;
+  margin: 0 auto;
   border-radius: 4px;
+  max-width: 30rem;
   box-shadow:
     0 10px 30px rgba(20, 33, 61, 0.06),
     0 2px 6px rgba(20, 33, 61, 0.03);
@@ -650,6 +620,7 @@ footer .container {
   }
   .header-container {
     padding: 1rem 1.5rem 1rem;
+    justify-content: space-around;
   }
 
   .nav-logo-link {
@@ -708,17 +679,18 @@ footer .container {
   }
 
   .hero-eyebrow {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero-header {
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
+    font-size: 3rem;
     padding: 0 2rem;
   }
 
   .hero-text {
-    font-size: 2rem;
-    max-width: 40rem;
+    font-size: 1.5rem;
+    max-width: 30rem;
   }
 
   .hero-btn-holder {
@@ -727,15 +699,18 @@ footer .container {
   }
 
   .cta-btn {
-    font-size: 1.5rem;
-    width: 12rem;
+    font-size: 1.2rem;
+    width: 10rem;
     padding: 1rem;
   }
 
   .learn-more-btn {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    width: 10rem;
     padding: 1rem;
-    width: 12rem;
+  }
+  .learn-more-btn span {
+    font-size: 1.5rem;
   }
 
   /* ---ABOUT--- */
@@ -853,7 +828,7 @@ footer .container {
 
 @media only screen and (min-width: 1024px) {
   .header-container {
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
 
   p {
@@ -935,7 +910,7 @@ footer .container {
 
   /* ---HERO--- */
 
-  section.hero {
+  /* section.hero {
     padding: 5rem;
   }
 
@@ -968,6 +943,61 @@ footer .container {
   .learn-more-btn {
     font-size: 2rem;
     width: 15rem;
+  } */
+  section.hero {
+    padding: 3.75rem 1.5rem 4.5rem;
+  }
+
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hero-eyebrow {
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .hero-header {
+    padding: 0 1rem;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .grid-column-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 2rem;
+  }
+
+  .hero-text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    max-width: 40rem;
+    padding-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-btn-holder {
+    gap: 0.5rem;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .cta-btn {
+    font-size: 1.2rem;
+    width: 10rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .learn-more-btn {
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
   }
 
   /* ---ABOUT--- */
