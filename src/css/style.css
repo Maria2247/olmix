@@ -1040,3 +1040,9 @@ footer .container {
     font-size: 1.125rem;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .contacts-bg {
+    left: 10rem;
+  }
+}
